@@ -1,6 +1,6 @@
-require_relative 'boot'
+require_relative "boot"
 
-require 'rails/all'
+require "rails/all"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -10,12 +10,12 @@ module SpreeStarter
   class Application < Rails::Application
     config.to_prepare do
       # Load application's model / class decorators
-      Dir.glob(File.join(File.dirname(__FILE__), '../app/**/*_decorator*.rb')) do |c|
+      Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
 
       # Load application's view overrides
-      Dir.glob(File.join(File.dirname(__FILE__), '../app/overrides/*.rb')) do |c|
+      Dir.glob(File.join(File.dirname(__FILE__), "../app/overrides/*.rb")) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
     end
@@ -27,9 +27,9 @@ module SpreeStarter
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-        # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
+    # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    config.time_zone = 'Central Time (US & Canada)'
+    config.time_zone = "Central Time (US & Canada)"
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
@@ -40,6 +40,9 @@ module SpreeStarter
 
     # adds support for Services
     config.autoload_paths += %W(#{config.root}/services #{config.root}/app/services/concerns)
+
+    # When deploying to Heroku by default Rails will attempt to intialize itself before the assets are precompiled. This step will fail because the application will attempt to establish a database connection, which Heroku will not have set up yet.
+    config.assets.initialize_on_precompile = false
 
     if Rails.env.production?
       # CloudFlare middleware for proper visitors IP addresses
