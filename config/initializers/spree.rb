@@ -16,3 +16,7 @@ Spree.config do |config|
 end
 
 Spree.user_class = 'Spree::User'
+
+# Alternate Payment Methods
+Rails.application.config.spree.payment_methods << Spree::Gateway::Flutterwave
+
