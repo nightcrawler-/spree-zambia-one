@@ -47,6 +47,10 @@ group :development do
   gem "web-console", "~> 4.0"
 
   gem "letter_opener"
+
+  # Useful for filling out fields on models
+  gem "annotate"
+
 end
 
 group :test do
