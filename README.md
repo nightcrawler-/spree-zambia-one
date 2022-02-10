@@ -142,3 +142,10 @@ We are passionate about open source software.
 We are [available for hire][spark].
 
 [spark]:http://sparksolutions.co?utm_source=github
+
+
+# This Particular Repo
+
+### spree_related_products
+
+- Available from the edit Product section on the Admin console
