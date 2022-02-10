@@ -78,10 +78,12 @@ gem "spree", spree_opts
 gem "spree_sample", spree_opts
 gem "spree_emails", spree_opts
 gem "spree_backend", spree_opts
-gem "spree_gateway"
 gem "spree_auth_devise"
 gem "spree_i18n", ">= 5.0"
 gem "spree_dev_tools", require: false, group: %w[test development]
+
+# Custom spree_gateway fork
+gem 'spree_gateway', github: 'nightcrawler-/spree_gateway', branch: 'feature/flutterwave-mpesa'
 
 # Sentry Client
 gem "sentry-raven"
