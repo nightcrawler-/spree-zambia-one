@@ -13,10 +13,21 @@ Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
+
+  puts "@@@@@####################################################################"
+
+Rails.application.config.spree.payment_methods = [Spree::Gateway::Flutterwave]
+puts Rails.application.config.spree.inspect
+
+puts "@@@@@######################################################################"
+
 end
 
 Spree.user_class = 'Spree::User'
 
 # Alternate Payment Methods
-Rails.application.config.spree.payment_methods << Spree::Gateway::Flutterwave
+puts "####################################################################"
 
+puts Rails.application.config.spree.payment_methods.inspect
+
+puts "######################################################################"
