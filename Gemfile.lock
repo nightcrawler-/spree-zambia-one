@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/nightcrawler-/spree_gateway.git
-  revision: 91d1a560fcceaa69bfd1bad3148ecc18ebbbd029
+  revision: bb037b0a7dc67d85b2aa286710e9ee5de08113fb
   branch: feature/flutterwave-mpesa
   specs:
     spree_gateway (3.9.4)
@@ -132,7 +132,7 @@ GEM
       activerecord (>= 4.0.0, < 7.1)
     awesome_print (1.9.2)
     aws-eventstream (1.2.0)
-    aws-partitions (1.553.0)
+    aws-partitions (1.554.0)
     aws-sdk-core (3.126.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
