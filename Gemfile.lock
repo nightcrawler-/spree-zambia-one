@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/nightcrawler-/spree_gateway.git
-  revision: 8af7227a513c59bb8f771a68bad7424cf891050d
+  revision: 3076d0edd677805b11d168784ee603a9a8774925
   branch: feature/flutterwave-mpesa
   specs:
     spree_gateway (3.9.4)
