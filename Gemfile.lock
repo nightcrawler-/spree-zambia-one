@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/nightcrawler-/spree_gateway.git
-  revision: 51e76a04025e2806e8dbf59c3931734a402006e5
+  revision: 46d51028b4cfcb6fb22a633550d8fbefad585cbf
   branch: feature/fw-mpesa-compl
   specs:
     spree_gateway (3.9.4)
