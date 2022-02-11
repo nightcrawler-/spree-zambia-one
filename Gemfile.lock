@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/nightcrawler-/spree_gateway.git
-  revision: 7c28c30882313248b83c7e95d5993e25a6e33000
+  revision: c46edf057334870924e5239da1bec93968b5f85f
   branch: feature/multi-afri
   specs:
     spree_gateway (3.9.4)
