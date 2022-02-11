@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_03_185387) do
+ActiveRecord::Schema.define(version: 2022_02_10_191704) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -287,6 +287,20 @@ ActiveRecord::Schema.define(version: 2021_12_03_185387) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["variant_id"], name: "index_spree_digitals_on_variant_id"
+  end
+
+  create_table "spree_flutterwave_payments", force: :cascade do |t|
+    t.bigint "payment_method_id"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "spree_flutterwave_requests", force: :cascade do |t|
+    t.bigint "payment_method_id"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "spree_gateways", force: :cascade do |t|
@@ -907,6 +921,26 @@ ActiveRecord::Schema.define(version: 2021_12_03_185387) do
     t.index ["customer_return_id"], name: "index_spree_reimbursements_on_customer_return_id"
     t.index ["number"], name: "index_spree_reimbursements_on_number", unique: true
     t.index ["order_id"], name: "index_spree_reimbursements_on_order_id"
+  end
+
+  create_table "spree_relation_types", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "applies_to"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_relations", id: :serial, force: :cascade do |t|
+    t.bigint "relation_type_id"
+    t.string "relatable_type"
+    t.bigint "relatable_id"
+    t.string "related_to_type"
+    t.bigint "related_to_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.decimal "discount_amount", precision: 8, scale: 2, default: "0.0"
+    t.integer "position"
   end
 
   create_table "spree_return_authorization_reasons", force: :cascade do |t|

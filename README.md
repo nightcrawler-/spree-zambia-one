@@ -142,3 +142,26 @@ We are passionate about open source software.
 We are [available for hire][spark].
 
 [spark]:http://sparksolutions.co?utm_source=github
+
+
+# This Particular Repo
+
+## Notes
+
+Before deployment on Heroku, make sure to pre-provision the database:
+
+```bash
+heroku addons:create heroku-postgresql:hobby-dev -a <app-name>
+```
+
+Then follow up with the usual `db:migrate db seed`
+
+To load sample data:
+
+```bash
+heroku run rake spree_sample:load -a <app name>
+```
+
+### spree_related_products
+
+Available from the edit Product section on the Admin console. More from the [docs](https://github.com/spree-contrib/spree_related_products)
