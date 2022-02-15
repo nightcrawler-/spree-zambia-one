@@ -5,6 +5,4 @@
 // the compiled file.
 //
 //= require spree/frontend
-
 //= require_tree .
-//= require spree/frontend/spree_reviews
