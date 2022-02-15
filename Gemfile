@@ -118,7 +118,7 @@ gem 'spree_related_products', github: 'spree-contrib/spree_related_products'
 gem 'spree_multi_vendor'
 
 # Reviews
-# gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
+gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
 
 
 
