@@ -120,5 +120,8 @@ gem 'spree_multi_vendor'
 # Reviews
 gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
 
+# Legacy front end
+gem 'spree_frontend'
+
 
 
