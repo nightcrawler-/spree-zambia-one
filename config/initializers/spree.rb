@@ -15,4 +15,6 @@ Spree.config do |config|
   # config.track_inventory_levels = false
 end
 
+Spree::PermittedAttributes.payment_attributes << {source_attributes: [:payment_instrument_number]}
+
 Spree.user_class = 'Spree::User'

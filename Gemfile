@@ -83,7 +83,7 @@ gem "spree_i18n", ">= 5.0"
 gem "spree_dev_tools", require: false, group: %w[test development]
 
 # Custom spree_gateway fork
-gem 'spree_gateway', github: 'nightcrawler-/spree_gateway', branch: 'feature/flutterwave-mpesa'
+gem 'spree_gateway', github: 'nightcrawler-/spree_gateway', branch: 'develop'
 
 # Sentry Client
 gem "sentry-raven"
@@ -113,6 +113,12 @@ gem 'searchkick'
 
 # Related Products
 gem 'spree_related_products', github: 'spree-contrib/spree_related_products'
+
+# Multi vendor Created Vendor Admin User with an email "user@vendor.com" and password "vendor123"!
+gem 'spree_multi_vendor'
+
+# Reviews
+gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
 
 
 
