@@ -1,6 +1,6 @@
-# Spree Starter
+# Spree Store - ZM
 
-This a dockerized [Spree Commerce](https://spreecommerce.org) application template ready to for local development and deployment to cloud providers.
+This a dockerized [Spree Commerce](https://spreecommerce.org) application ready to for local development and deployment to cloud providers.
 
 ## Deploy in the cloud
 
@@ -123,26 +123,6 @@ docker-compose restart
 | DB_POOL | database connection pool | 5 |
 | MEMCACHED_POOL_SIZE | memcache connection pool | 5 |
 | SENDGRID_API_KEY | API key to interface Sendgrid API | |
-
-## License
-
-Spree Starter (formerly Spark Starter Kit) is copyright © 2015-2021
-[Spark Solutions Sp. z o.o.][spark]. It is free software,
-and may be redistributed under the terms specified in the
-[LICENSE](LICENSE.md) file.
-
-## About Spark Solutions
-
-[![Spark Solutions](http://sparksolutions.co/wp-content/uploads/2015/01/logo-ss-tr-221x100.png)][spark]
-
-Spree Starter is maintained and funded by [Spark Solutions Sp. z o.o.](http://sparksolutions.co?utm_source=github)
-The names and logos are trademarks of Spark Solutions Sp. z o.o.
-
-We are passionate about open source software.
-We are [available for hire][spark].
-
-[spark]:http://sparksolutions.co?utm_source=github
-
 
 # This Particular Repo
 

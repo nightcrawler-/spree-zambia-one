@@ -83,7 +83,7 @@ gem "spree_i18n", ">= 5.0"
 gem "spree_dev_tools", require: false, group: %w[test development]
 
 # Custom spree_gateway fork
-gem 'spree_gateway', github: 'nightcrawler-/spree_gateway', branch: 'develop'
+gem 'spree_gateway', github: 'nightcrawler-/spree_gateway', branch: 'feature/refine-fw-zm'
 
 # Sentry Client
 gem "sentry-raven"
@@ -122,6 +122,9 @@ gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
 
 # Legacy front end
 gem 'spree_frontend'
+
+# Use patched version of rave-ruby
+gem 'rave_ruby', github: 'nightcrawler-/rave-ruby', branch: 'develop'
 
 
 
