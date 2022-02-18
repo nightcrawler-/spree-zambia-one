@@ -120,5 +120,8 @@ gem 'spree_multi_vendor'
 # Reviews
 gem 'spree_reviews', github: 'spree-contrib/spree_reviews'
 
+# Use patched version of rave-ruby
+gem 'rave_ruby', github: 'nightcrawler-/rave-ruby', branch: 'develop'
+
 
 

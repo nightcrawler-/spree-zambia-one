@@ -1,6 +1,14 @@
 GIT
+  remote: https://github.com/nightcrawler-/rave-ruby.git
+  revision: dd71e4ca008f7b2ccda5543f5ec349e55e1e2571
+  branch: develop
+  specs:
+    rave_ruby (0.1.2)
+      httparty (~> 0.16.3)
+
+GIT
   remote: https://github.com/nightcrawler-/spree_gateway.git
-  revision: 3a7a47c73002e0581891f5751aedf304ef13e6fa
+  revision: ea5b4fa57dc6610cdbef45bf61e6cd84d2af6c80
   branch: develop
   specs:
     spree_gateway (3.9.4)
@@ -144,8 +152,8 @@ GEM
       activerecord (>= 4.0.0, < 7.1)
     awesome_print (1.9.2)
     aws-eventstream (1.2.0)
-    aws-partitions (1.554.0)
-    aws-sdk-core (3.126.1)
+    aws-partitions (1.555.0)
+    aws-sdk-core (3.126.2)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -241,7 +249,7 @@ GEM
     execjs (2.8.1)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
-    faraday (1.9.3)
+    faraday (1.10.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
@@ -364,7 +372,7 @@ GEM
       money (~> 6.12)
     money (6.16.0)
       i18n (>= 0.6.4, <= 2)
-    msgpack (1.4.4)
+    msgpack (1.4.5)
     multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
@@ -455,8 +463,6 @@ GEM
       activerecord (>= 5.2.4)
       activesupport (>= 5.2.4)
       i18n
-    rave_ruby (0.1.2)
-      httparty (~> 0.16.3)
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -677,7 +683,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    stackprof (0.2.17)
+    stackprof (0.2.18)
     state_machines (0.5.0)
     state_machines-activemodel (0.8.0)
       activemodel (>= 5.1)
@@ -754,6 +760,7 @@ DEPENDENCIES
   rack-timeout
   rails (~> 6.1.4)
   rails_12factor
+  rave_ruby!
   remote_syslog_logger
   rspec_junit_formatter
   sass-rails
