@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/nightcrawler-/spree_gateway.git
-  revision: babd0cbd6e1c64dc615b6c63f123b00643d9d0c6
+  revision: 1d98d8742c5b582853fdd1dc30e3dfdc27c88510
   branch: feature/refine-fw-zm
   specs:
     spree_gateway (3.9.4)
