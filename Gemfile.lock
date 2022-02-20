@@ -8,10 +8,10 @@ GIT
 
 GIT
   remote: https://github.com/nightcrawler-/spree_gateway.git
-  revision: 1d98d8742c5b582853fdd1dc30e3dfdc27c88510
-  branch: feature/refine-fw-zm
+  revision: 37d66aabcdfdc5a60c58f3180431eecdb855385a
+  branch: main
   specs:
-    spree_gateway (3.9.4)
+    spree_gateway (0.0.5)
       rave_ruby
       spree_backend (>= 3.7.0)
       spree_core (>= 3.7.0)
@@ -326,7 +326,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
-    jsbundling-rails (1.0.0)
+    jsbundling-rails (1.0.1)
       railties (>= 6.0.0)
     jsonapi-rspec (0.0.11)
       rspec-core
@@ -707,7 +707,7 @@ GEM
     state_machines-activerecord (0.8.0)
       activerecord (>= 5.1)
       state_machines-activemodel (>= 0.8.0)
-    stimulus-rails (1.0.2)
+    stimulus-rails (1.0.3)
       railties (>= 6.0.0)
     stringex (2.8.5)
     syslog_protocol (0.9.2)

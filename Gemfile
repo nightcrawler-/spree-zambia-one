@@ -83,7 +83,7 @@ gem "spree_i18n", ">= 5.0"
 gem "spree_dev_tools", require: false, group: %w[test development]
 
 # Custom spree_gateway fork
-gem 'spree_gateway', github: 'nightcrawler-/spree_gateway', branch: 'feature/refine-fw-zm'
+gem 'spree_gateway', github: 'nightcrawler-/spree_gateway', branch: 'main'
 
 # Sentry Client
 gem "sentry-raven"
