@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_14_164334) do
+ActiveRecord::Schema.define(version: 2022_03_06_170213) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -587,6 +587,15 @@ ActiveRecord::Schema.define(version: 2022_02_14_164334) do
     t.index ["store_id"], name: "index_spree_orders_on_store_id"
     t.index ["token"], name: "index_spree_orders_on_token"
     t.index ["user_id", "created_by_id"], name: "index_spree_orders_on_user_id_and_created_by_id"
+  end
+
+  create_table "spree_paygo_requests", force: :cascade do |t|
+    t.string "account_no"
+    t.string "msisdn"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "payment_method_id"
+    t.bigint "user_id"
   end
 
   create_table "spree_payment_capture_events", force: :cascade do |t|
